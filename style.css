@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-color: #f1f1f1;
+  /* background-image: url(https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/kobu-agency-ipARHaxETRk-unsplash.jpg);
+  background-size: cover;*/
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0;
+  margin: 20px 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ava {
+  color: #5f5f5f;
+  font-size: 24px;
+  border: 4px solid #5f5f5f;
+  border-radius: 5px;
+}
+
+.ava h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.ava h2::first-letter {
+  color: orangered;
+}
+
+.group {
+  display: flex;
+}
+.group h2 {
+  margin-right: 25px;
+  color: #5f5f5f;
+}
+.group h2:last-child {
+  margin-right: 0;
+}
+
+.info {
+  color: #5f5f5f;
+  text-align: center;
+}
+
+.firstw {
+  color: orangered;
+}
+
+.info p {
+  margin: 0 50px;
+}
+
+.parent {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cform {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+  width: 300px;
+  height: auto;
+}
+.cform h2 {
+  text-align: center;
+  color: #5f5f5f;
+  margin: 0;
+}
+
+.cform label {
+  color: #5f5f5f;
+}
+
+.formi,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #5f5f5f;
+  color: #5f5f5f;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+  margin-bottom: 15px;
+}
+
+.cform textarea {
+  padding-bottom: 15px;
+}
+
+.cform .btn {
+  background-color: orangered;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btnspace {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 40%;
+  margin-right: 10vh;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .home,
+  .contact,
+  .about {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cform {
+    margin: 0 auto;
+  }
+}
+
+.c2 {
+  height: auto;
+  background-color: #e4d4ed;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+  color: #5f5f5f;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 50px 0 50px;
+  background-color: #e4d4ed;
+}
+
+.card {
+  width: 20%;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /*background-image: url(https://images.pexels.com/photos/2657669/pexels-photo-2657669.jpeg?auto=compress&cs=tinysrgb&w=600);
+background-image:;*/
+}
+
+.card::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* Creates a 1:1 aspect ratio */
+}
+
+/* Media query for screens with width up to 700px */
+@media screen and (max-width: 700px) {
+  .card {
+    /* width: 40%;*/
+    width: calc(50% - 10px);
+  }
+
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.card:first-child {
+  background-image: url(https://images.pexels.com/photos/2657669/pexels-photo-2657669.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:nth-last-child(2) {
+  background-image: url(https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:nth-last-child(3) {
+  background-image: url(https://images.pexels.com/photos/8867475/pexels-photo-8867475.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:last-child {
+  background-image: url(https://images.pexels.com/photos/7640773/pexels-photo-7640773.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c3 {
+  height: 500px;
+}
